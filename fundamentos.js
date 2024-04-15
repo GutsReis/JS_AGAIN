@@ -156,3 +156,70 @@ function testeHoisting() {
 // arrow function
 const testeArrow = () => console.log('Isso também é uma função.')
 testeArrow()
+
+// truthy e falsy
+const minhaaVariavel = '' // falsy
+const minhaVariavel2 = 'algum texto' // truthy
+
+if (minhaaVariavel) {
+    console.log('É verdadeiro')
+}else{
+    console.log('É falso!')
+}
+
+if (minhaVariavel2) {
+    console.log('É verdadeiro! 2')
+}else{
+    console.log('É falso! 2')
+}
+
+// Array
+const numeros = [1, 2, 3, 4, 5]
+
+console.log(numeros)
+
+console.log(numeros[0])
+
+console.log(numeros[2])
+
+// adicionando numeros ao array
+numeros.push(6)
+
+console.log(numeros)
+
+numeros.pop()
+
+console.log(numeros)
+
+// string
+const minhaStringNova = 'Olá, mundo!'
+
+const minhaString3 = minhaStringNova + ' Como você está?'
+
+console.log(minhaString3)
+
+// interpolação (forma mais moderna de concatenar)
+const minhaString4 = `${minhaStringNova} Como você está?`
+console.log(minhaString4)
+
+console.log(minhaString4.length) // quantidade de caracteres
+
+console.log(minhaString4[5])
+
+console.log(minhaString4.toUpperCase())
+
+// Data e hora
+const agora = Date()
+console.log(agora)
+
+const natal = new Date(2024, 11, 25)
+console.log(natal)
+
+// Math
+console.log(Math.PI)
+
+console.log(Math.round(3.6))
+
+console.log(Math.sqrt(16))
+
+console.log(Math.pow(2, 3))
